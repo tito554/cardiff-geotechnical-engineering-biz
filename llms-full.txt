@@ -1,0 +1,39 @@
+# Cardiff
+
+> Geotechnical engineering company in United States, providing professional services in soil mechanics, foundation engineering and site investigation.
+
+## Services
+- [Cone Penetration](https://cardiff.geotechnical-engineering.biz/cone-penetration/)
+- [Differential Settlement Analysis](https://cardiff.geotechnical-engineering.biz/differential-settlement-analysis/)
+- [Direct Shear](https://cardiff.geotechnical-engineering.biz/direct-shear/)
+- [Foundations](https://cardiff.geotechnical-engineering.biz/foundations/)
+- [Foundations Fill](https://cardiff.geotechnical-engineering.biz/foundations-fill/)
+- [Geophysics](https://cardiff.geotechnical-engineering.biz/geophysics/)
+- [Geotechnical Drainage Design](https://cardiff.geotechnical-engineering.biz/geotechnical-drainage-design/)
+- [Ground Improvement](https://cardiff.geotechnical-engineering.biz/ground-improvement/)
+- [Hvsr Microtremor Survey](https://cardiff.geotechnical-engineering.biz/hvsr-microtremor-survey/)
+- [In Situ Testing](https://cardiff.geotechnical-engineering.biz/in-situ-testing/)
+- [Investigation](https://cardiff.geotechnical-engineering.biz/investigation/)
+- [Jet Grouting Design](https://cardiff.geotechnical-engineering.biz/jet-grouting-design/)
+- [Laboratory](https://cardiff.geotechnical-engineering.biz/laboratory/)
+- [Mechanically Stabilized Earth](https://cardiff.geotechnical-engineering.biz/mechanically-stabilized-earth/)
+- [Micropile Design](https://cardiff.geotechnical-engineering.biz/micropile-design/)
+- [Organic Soil Management](https://cardiff.geotechnical-engineering.biz/organic-soil-management/)
+- [Retaining Wall Design](https://cardiff.geotechnical-engineering.biz/retaining-wall-design/)
+- [Seismic](https://cardiff.geotechnical-engineering.biz/seismic/)
+- [Seismic Foundation Design](https://cardiff.geotechnical-engineering.biz/seismic-foundation-design/)
+- [Settlement Analysis](https://cardiff.geotechnical-engineering.biz/settlement-analysis/)
+- [Site Response Analysis](https://cardiff.geotechnical-engineering.biz/site-response-analysis/)
+- [Slope Stability Analysis](https://cardiff.geotechnical-engineering.biz/slope-stability-analysis/)
+- [Slopes Walls](https://cardiff.geotechnical-engineering.biz/slopes-walls/)
+- [Soil Liquefaction Analysis](https://cardiff.geotechnical-engineering.biz/soil-liquefaction-analysis/)
+- [Soil Mechanics Study](https://cardiff.geotechnical-engineering.biz/soil-mechanics-study/)
+- [Standard Penetration](https://cardiff.geotechnical-engineering.biz/standard-penetration/)
+- [Undisturbed Sampling](https://cardiff.geotechnical-engineering.biz/undisturbed-sampling/)
+
+## Contact
+- Website: https://cardiff.geotechnical-engineering.biz/
+
+## About
+This page provides information about geotechnical engineering services available in United States.
+The company complies with local and international standards including ASTM, ISO and country-specific norms.
