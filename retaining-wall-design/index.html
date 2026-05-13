@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -181,7 +217,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Q&A</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<details><summary>What is the typical cost range for a retaining wall design in Cardiff?</summary><p>For a standard residential wall up to 3 m high the design fee usually falls between £750 and £1,800. Larger commercial walls with deep embedment or complex drainage can reach £3,440. The final figure depends on the number of boreholes, laboratory tests and structural iterations needed.</p></details><details><summary>Do I need a retaining wall design if the ground slopes only gently?</summary><p>Yes, because even a 5° slope in the glacial till can generate enough lateral pressure to crack a masonry garden wall. The design ensures the wall resists both soil thrust and any surcharge from adjacent traffic or buildings. A quick site walkover and one trial pit give you the answer in a day.</p></details><details><summary>How long does the design process take from site visit to final drawing?</summary><p>A typical residential wall takes 10 to 15 working days. That includes one day for the site investigation, five days for laboratory testing, and the rest for <a href="../foundations-fill/" data-interlink="1">analysis</a> and detailing. For larger schemes with multiple walls we schedule a phased delivery so that the foundation works can start while the upper wall is still being designed.</p></details></div></section>
+<details><summary>What is the typical cost range for a retaining wall design in Cardiff?</summary><p>For a standard residential wall up to 3 m high the design fee usually falls between £750 and £1,800. Larger commercial walls with deep embedment or complex drainage can reach £3,440. The final figure depends on the number of boreholes, <a href="/laboratory/">laboratory</a> tests and structural iterations needed.</p></details><details><summary>Do I need a retaining wall design if the ground slopes only gently?</summary><p>Yes, because even a 5° slope in the glacial till can generate enough lateral pressure to crack a masonry garden wall. The design ensures the wall resists both soil thrust and any surcharge from adjacent traffic or buildings. A quick site walkover and one trial pit give you the answer in a day.</p></details><details><summary>How long does the design process take from site visit to final drawing?</summary><p>A typical residential wall takes 10 to 15 working days. That includes one day for the site investigation, five days for laboratory testing, and the rest for <a href="../foundations-fill/" data-interlink="1">analysis</a> and detailing. For larger schemes with multiple walls we schedule a phased delivery so that the foundation works can start while the upper wall is still being designed.</p></details></div></section>
 
 
 

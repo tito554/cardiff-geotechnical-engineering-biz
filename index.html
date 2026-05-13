@@ -112,6 +112,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -205,7 +241,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Local geology</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<div>Cardiff is underlain by a complex sequence of superficial deposits, predominantly glacial tills and fluvial sediments associated with the Taff and Ely valleys. The bedrock consists mainly of Carboniferous Limestone and Old Red Sandstone, often buried beneath up to 20 metres of Quaternary deposits. In the city centre, you typically encounter firm to stiff glacial till overlying weathered rock, while along the coast and river corridors, soft alluvial clays and silts are common, often with high groundwater levels. The Cardiff area also features localized peat deposits in former marshlands, which can pose challenges for foundation design. Groundwater is generally shallow, particularly near the coast, requiring careful dewatering and drainage considerations. The region is not seismically active, but liquefaction potential in loose saturated sands during rare events should be assessed. Understanding these conditions is critical for safe and economical foundation solutions.</div></div></section><section class="block tint"><div class="container"><h2>Reference standards</h2><p>In the UK, geotechnical design follows Eurocode 7 (BS EN 1997) for geotechnical aspects, supplemented by the UK National Annex. Site investigation typically adheres to BS 5930:2015 for ground investigation procedures, while laboratory testing follows BS 1377 methods. For foundation design, we reference the NHBC Standards for residential projects and the Design Manual for Roads and Bridges (DMRB) for infrastructure. Seismic design is guided by BS EN 1998-5, though Cardiff is in a low seismicity zone. Our reports are fully code-compliant, ensuring acceptance by local authorities and building control.</p></div></section>
+<div>Cardiff is underlain by a complex sequence of superficial deposits, predominantly glacial tills and fluvial sediments associated with the Taff and Ely valleys. The bedrock consists mainly of Carboniferous Limestone and Old Red Sandstone, often buried beneath up to 20 metres of Quaternary deposits. In the city centre, you typically encounter firm to stiff glacial till overlying weathered rock, while along the coast and river corridors, soft alluvial clays and silts are common, often with high groundwater levels. The Cardiff area also features localized peat deposits in former marshlands, which can pose challenges for foundation design. Groundwater is generally shallow, particularly near the coast, requiring careful dewatering and drainage considerations. The region is not seismically active, but liquefaction potential in loose saturated sands during rare events should be assessed. Understanding these conditions is critical for safe and economical foundation solutions.</div></div></section><section class="block tint"><div class="container"><h2>Reference standards</h2><p>In the UK, geotechnical design follows Eurocode 7 (BS EN 1997) for geotechnical aspects, supplemented by the UK National Annex. Site investigation typically adheres to BS 5930:2015 for ground investigation procedures, while <a href="/laboratory/">laboratory</a> testing follows BS 1377 methods. For foundation design, we reference the NHBC Standards for residential projects and the Design Manual for Roads and Bridges (DMRB) for infrastructure. Seismic design is guided by BS EN 1998-5, though Cardiff is in a low seismicity zone. Our reports are fully code-compliant, ensuring acceptance by local authorities and building control.</p></div></section>
     <section class="block mid-cta-6c4d-6c4d" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#EAB30815,#EAB30808);border-left:4px solid #EAB308;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
