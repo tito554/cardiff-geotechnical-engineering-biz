@@ -98,14 +98,31 @@ table td{padding:.65rem 1rem;border-bottom:1px solid #E5E7EB;font-size:.9rem}
   body{background:#FAFAFA!important;color:#18181B!important}
 img{max-width:100%!important;height:auto!important}
 }
-</style></head><body>
+</style><style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
+</head><body>
 
 <div class="topbar">
     <div class="logo-area" data-logo-link="1" onclick="window.location.href=\'../\'" style="cursor:pointer;margin-right:2.5rem;flex-shrink:0">
         <div class="logo-text"><div class="main">CARDIFF UK</div><div class="sub">CARDIFF</div></a></div>
     </div>
     <div class="nav">
-        <div class="nav-item has-dd"><a href="../investigation/" class="nav-cat-link">Investigation</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../cone-penetration/">CPT (Cone Penetration Test)</a><a href="../standard-penetration/">SPT (Standard Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="../in-situ-testing/" class="nav-cat-link">In-Situ Testing</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../undisturbed-sampling/">Undisturbed sampling (Shelby tube)</a></div></div><div class="nav-item has-dd"><a href="../laboratory/" class="nav-cat-link">Laboratory</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../direct-shear/">Direct shear test</a><a href="../soil-mechanics-study/">Soil mechanics study</a></div></div><div class="nav-item has-dd"><a href="../geophysics/" class="nav-cat-link">Geophysics</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../hvsr-microtremor-survey/">HVSR microtremor survey (Nakamura method)</a></div></div><div class="nav-item has-dd"><a href="../foundations/" class="nav-cat-link">Foundations</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../differential-settlement-analysis/">Differential settlement analysis</a><a href="../settlement-analysis/">Settlement analysis</a><a href="../foundations-fill/">Foundations on fill (analysis)</a><a href="../seismic-foundation-design/">Seismic foundation design</a><a href="../micropile-design/">Micropile design</a></div></div><div class="nav-item has-dd"><a href="../slopes-walls/" class="nav-cat-link">Slopes & Walls</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../slope-stability-analysis/">Slope stability analysis</a><a href="../retaining-wall-design/">Retaining wall design</a><a href="../mechanically-stabilized-earth/">MSE (Mechanically Stabilized Earth) wall design</a></div></div><div class="nav-item has-dd"><a href="../ground-improvement/" class="nav-cat-link">Ground improvement</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../geotechnical-drainage-design/">Geotechnical drainage design</a><a href="../jet-grouting-design/">Jet grouting design</a><a href="../organic-soil-management/">Organic soil management</a></div></div><div class="nav-item has-dd"><a href="../seismic/" class="nav-cat-link">Seismic</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../soil-liquefaction-analysis/">Soil liquefaction analysis</a><a href="../site-response-analysis/">Site response analysis</a></div></div>
+        <div class="nav-item has-dd"><a href="../investigation/" class="nav-cat-link">Investigation</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../cone-penetration/">CPT (Cone Penetration Test)</a><a href="../standard-penetration/">SPT (Standard Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="../in-situ-testing/" class="nav-cat-link">In-Situ</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../undisturbed-sampling/">Undisturbed sampling (Shelby tube)</a></div></div><div class="nav-item has-dd"><a href="../laboratory/" class="nav-cat-link">Laboratory</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../direct-shear/">Direct shear test</a><a href="../soil-mechanics-study/">Soil mechanics study</a></div></div><div class="nav-item has-dd"><a href="../geophysics/" class="nav-cat-link">Geophysics</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../hvsr-microtremor-survey/">HVSR microtremor survey (Nakamura method)</a></div></div><div class="nav-item has-dd"><a href="../foundations/" class="nav-cat-link">Foundations</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../differential-settlement-analysis/">Differential settlement analysis</a><a href="../settlement-analysis/">Settlement analysis</a><a href="../foundations-fill/">Foundations on fill (analysis)</a><a href="../seismic-foundation-design/">Seismic foundation design</a><a href="../micropile-design/">Micropile design</a></div></div><div class="nav-item has-dd"><a href="../slopes-walls/" class="nav-cat-link">Slopes & Walls</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../slope-stability-analysis/">Slope stability analysis</a><a href="../retaining-wall-design/">Retaining wall design</a><a href="../mechanically-stabilized-earth/">MSE (Mechanically Stabilized Earth) wall design</a></div></div><div class="nav-item has-dd"><a href="../ground-improvement/" class="nav-cat-link">Improvement</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../geotechnical-drainage-design/">Geotechnical drainage design</a><a href="../jet-grouting-design/">Jet grouting design</a><a href="../organic-soil-management/">Organic soil management</a></div></div><div class="nav-item has-dd"><a href="../seismic/" class="nav-cat-link">Seismic</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../soil-liquefaction-analysis/">Soil liquefaction analysis</a><a href="../site-response-analysis/">Site response analysis</a></div></div>
         <a class="nav-contact-btn" href="mailto:contact@geotechnical-engineering.biz">CONNECT</a>
     </div>
 </div>
@@ -141,15 +158,15 @@ img{max-width:100%!important;height:auto!important}
         <div class="svc-card">
             <div class="card-img" style="background-image:url('/img/drenaje-geotecnico-1.webp')"></div>
             <div class="card-body">
-                <h3>Ground improvement</h3>
+                <h3>Improvement</h3>
                 <div class="card-links"><a href="../geotechnical-drainage-design/">Geotechnical drainage design ›</a><a href="../jet-grouting-design/">Jet grouting design ›</a><a href="../organic-soil-management/">Organic soil management ›</a></div>
-                <a class="card-viewall" href="#mejoramiento">VIEW ALL GROUND IMPROVEMENT ›</a>
+                <a class="card-viewall" href="#mejoramiento">VIEW ALL IMPROVEMENT ›</a>
             </div>
         </div></div></div></section>
 
 
 
-<section class="block"><div class="container"><h2>Process overview</h2><div>The contrast between the glacial tills of Lisvane and the reclaimed ground of Cardiff Bay is stark. In Lisvane, you typically find stiff clays and gravels with SPT N-values above 35, so seismic foundation design there focuses on ductility of the superstructure rather than soil failure. Down in the Bay, where the ground was dredged and filled during the 1990s redevelopment, N-values drop to 8–15 in the top six metres. That demands a different approach: either deep foundations or ground improvement. The team here routinely compares liquefaction potential across these zones using the Youd-Idriss method from the 2001 NCEER workshop. Key parameters we always check include: <ul><li>Average shear-wave velocity (VS30) — Cardiff Bay often falls below 180 m/s (Site Class E)</li><li>Cyclic stress ratio (CSR) for Mw 6.0 events</li><li>Corrected blow counts (N1)60 in granular layers</li></ul> Each project gets its own ground-motion hazard curve, not a generic table.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Cardiff</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Cardiff sits at the northern edge of the Bristol Channel, a region with a moderate seismicity rate of about 0.03 g return period for a 475‑year event. But the real risk isn't the shaking itself — it's the basin effect. The deep Quaternary deposits that fill the Cardiff Basin can trap and amplify surface waves, especially in the 0.2–0.6 s period range that affects low‑ to mid‑rise buildings. Add to that the high water table within 2 m of the surface in many riverside areas, and you get a classic recipe for strength loss in cohesionless soils. Seismic foundation design must therefore include a site‑specific ground response <a href="../foundations-fill/" data-interlink="1">analysis</a> following ASCE/SEI 7‑16 recommendations, not just a code‑based spectrum. Ignoring the basin amplification has caused structural damage in similar UK settings during the 1984 Lleyn Peninsula earthquake.</p></div></section>
+<section class="block"><div class="container"><h2>Process overview</h2><div>The contrast between the glacial tills of Lisvane and the reclaimed ground of Cardiff Bay is stark. In Lisvane, you typically find stiff clays and gravels with SPT N-values above 35, so seismic foundation design there focuses on ductility of the superstructure rather than soil failure. Down in the Bay, where the ground was dredged and filled during the 1990s redevelopment, N-values drop to 8–15 in the top six metres. That demands a different approach: either deep foundations or Improvement. The team here routinely compares liquefaction potential across these zones using the Youd-Idriss method from the 2001 NCEER workshop. Key parameters we always check include: <ul><li>Average shear-wave velocity (VS30) — Cardiff Bay often falls below 180 m/s (Site Class E)</li><li>Cyclic stress ratio (CSR) for Mw 6.0 events</li><li>Corrected blow counts (N1)60 in granular layers</li></ul> Each project gets its own ground-motion hazard curve, not a generic table.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Cardiff</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Cardiff sits at the northern edge of the Bristol Channel, a region with a moderate seismicity rate of about 0.03 g return period for a 475‑year event. But the real risk isn't the shaking itself — it's the basin effect. The deep Quaternary deposits that fill the Cardiff Basin can trap and amplify surface waves, especially in the 0.2–0.6 s period range that affects low‑ to mid‑rise buildings. Add to that the high water table within 2 m of the surface in many riverside areas, and you get a classic recipe for strength loss in cohesionless soils. Seismic foundation design must therefore include a site‑specific ground response <a href="../foundations-fill/" data-interlink="1">analysis</a> following ASCE/SEI 7‑16 recommendations, not just a code‑based spectrum. Ignoring the basin amplification has caused structural damage in similar UK settings during the 1984 Lleyn Peninsula earthquake.</p></div></section>
     <section class="block mid-cta-6c4d-6c4d" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#EAB30815,#EAB30808);border-left:4px solid #EAB308;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
@@ -171,6 +188,7 @@ img{max-width:100%!important;height:auto!important}
 <link rel="stylesheet" href="/css/leaflet-6c4d.css"/>
 <script src="/js/leaflet-6c4d.js"></script>
 <script>
+
 (function(){
   function init(){
     if(typeof L==='undefined'){setTimeout(init,200);return;}
@@ -178,7 +196,7 @@ img{max-width:100%!important;height:auto!important}
     if(!el)return;
     var map=L.map(el).setView([51.4816546,-3.1791934],12);
     L.tileLayer('https://{s}.tile-6c4d.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
-    L.marker([51.4816546,-3.1791934]).addTo(map).bindPopup("Cardiff").openPopup();
+    L.marker([51.4816546,-3.1791934],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(map).bindPopup("Cardiff").openPopup();
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
 })();
@@ -198,7 +216,7 @@ img{max-width:100%!important;height:auto!important}
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.marker([51.4816546,-3.1791934]).addTo(m).bindPopup("Cardiff");
+          L.marker([51.4816546,-3.1791934],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("Cardiff");
         })();
         </script>
         <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">
